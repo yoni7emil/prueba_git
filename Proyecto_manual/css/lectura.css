@@ -1,0 +1,28 @@
+/* --- Estilos para el contenido de lectura --- */
+.contenido-pagina {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contenido-pagina p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+code {
+    background-color: #edf2f7;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #e53e3e; /* Color rojizo para resaltar código */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nota-informativa {
+    background-color: #ebf8ff;
+    border-left: 5px solid #3182ce;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 8px 8px 0;
+}

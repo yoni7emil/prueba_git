@@ -1,0 +1,45 @@
+/* --- Estilos del Formulario --- */
+.formulario-manual {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #102a43;
+}
+
+.campo-texto {
+    padding: 12px;
+    border: 1px solid #bcccdc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* --- Interactividad (Tal como pediste al inicio) --- */
+.campo-texto:focus {
+    outline: none;
+    border-color: #48bb78; /* Color verde al escribir */
+    box-shadow: 0 0 8px rgba(72, 187, 120, 0.2);
+}
+
+.campo-texto::placeholder {
+    color: #9fb3c8;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Estilo para el área de texto (textarea) */
+textarea.campo-texto {
+    resize: vertical; /* Permite estirar hacia abajo pero no hacia los lados */
+}

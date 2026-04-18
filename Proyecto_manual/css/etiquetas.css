@@ -1,0 +1,39 @@
+/* --- Estilos para Tablas --- */
+.tabla-manual {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    font-size: 0.95rem;
+}
+
+.tabla-manual th {
+    background-color: #102a43;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+.tabla-manual td {
+    border: 1px solid #dae1e7;
+    padding: 12px;
+}
+
+/* Efecto cebra también para tablas */
+.tabla-manual tbody tr:nth-child(even) {
+    background-color: #f1f5f8;
+}
+
+/* Separador horizontal suave */
+hr {
+    border: 0;
+    height: 1px;
+    background: #dae1e7;
+    margin: 30px 0;
+}
+
+/* Ajuste para los botones de navegación inferior */
+.boton-accion {
+    text-decoration: none;
+    display: inline-block;
+}

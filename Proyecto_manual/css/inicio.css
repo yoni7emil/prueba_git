@@ -1,0 +1,60 @@
+/* --- Estilos para el Menú de Navegación --- */
+.menu-navegacion {
+    background-color: #102a43;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.menu-navegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.menu-navegacion a:hover {
+    background-color: #48bb78; /* Color verde al pasar el mouse */
+}
+
+.menu-navegacion a.activo {
+    border-bottom: 3px solid #48bb78; /* Indica en qué página estás */
+}
+
+/* --- Estilo para la lista de enlaces del índice --- */
+.lista-enlaces {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-enlaces li {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.lista-enlaces a {
+    display: block;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #243b53;
+    text-decoration: none;
+    border-left: 5px solid #48bb78;
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.lista-enlaces a:hover {
+    transform: translateX(10px); /* Efecto de desplazamiento a la derecha */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #f0f4f8;
+}
+
+/* --- Estilo Cebra para los enlaces (Opcional) --- */
+.lista-enlaces li:nth-child(even) a {
+    background-color: #f9fafb;
+}

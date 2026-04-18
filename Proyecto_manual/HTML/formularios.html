@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Mi Manual HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+
+    <header id="cabecera-principal">
+        <h1>Capítulo 4: Formularios e Interactividad</h1>
+        <p>Crea interfaces que permitan al usuario enviar datos y recibir respuesta.</p>
+    </header>
+    
+    <nav class="menu-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="estructura.html">Estructura</a>
+        <a href="css-basico.html">CSS Básico</a>
+        <a href="formularios.html">Formularios</a>
+        <a href="glosario.html">Glosario</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="contenido-pagina">
+            <h2>Anatomía de un Formulario</h2>
+            <p>Un formulario se compone de la etiqueta contenedora <code>&lt;form&gt;</code> y diversos elementos de entrada:</p>
+
+            <ul class="lista-cebra">
+                <li><code>&lt;label&gt;</code>: El texto que describe qué debe escribir el usuario.</li>
+                <li><code>&lt;input type="text"&gt;</code>: Para nombres o textos breves.</li>
+                <li><code>&lt;input type="email"&gt;</code>: Valida automáticamente que el texto tenga un formato de correo.</li>
+                <li><code>&lt;button&gt;</code>: El disparador que envía la información.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Interactividad con Pseudo-clases</h2>
+            <p>CSS nos permite cambiar el estilo según el estado del elemento. Los más importantes para formularios son:</p>
+
+            <div class="explicacion-bloque">
+                <h3>:hover (Pasar el ratón)</h3>
+                <p>Cambia el estilo cuando el puntero está encima. Ideal para botones.</p>
+            </div>
+
+            <div class="explicacion-bloque">
+                <h3>:focus (Elemento activo)</h3>
+                <p>Se activa cuando el usuario hace clic dentro de un campo de texto para escribir.</p>
+            </div>
+            
+            <div class="explicacion-bloque">
+                <h3>::placeholder (Texto de ayuda)</h3>
+                <p>Permite dar estilo al texto gris que aparece dentro de los inputs antes de escribir.</p>
+            </div>
+        </section>
+
+        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="css-basico.html" class="boton-accion">← Anterior</a>
+            <a href="glosario.html" class="boton-accion">Siguiente →</a>
+        </div>
+    </main>
+
+     <footer>
+        <p>© 2026 - MANUAL HTML</p>
+    </footer>
+</body>
+</html>

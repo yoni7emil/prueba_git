@@ -1,0 +1,24 @@
+/* Contenedor gris de fondo (fijo en la parte superior) */
+.progreso-contenedor {
+    width: 100%;
+    height: 6px;
+    background: #e2e8f0; /* Gris claro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+/* La barra de color que se va llenando */
+.progreso-barra {
+    height: 6px;
+    background: #48bb78; /* El verde de tu manual */
+    width: 0%; /* Empieza vacía */
+    transition: width 0.1s ease-out; /* Suaviza el movimiento */
+}
+
+/* Ajuste para el header: como la barra es fija, 
+   añadimos un pequeño margen para que no tape el título */
+#cabecera-principal {
+    margin-top: 10px;
+}

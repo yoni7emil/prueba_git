@@ -1,0 +1,18 @@
+/* --- Estilos para Bloques de Explicación --- */
+.explicacion-bloque {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #102a43;
+}
+
+.explicacion-bloque h3 {
+    margin-top: 0;
+    color: #102a43;
+}
+
+/* Resaltado de etiquetas en el texto */
+strong {
+    color: #243b53;
+}

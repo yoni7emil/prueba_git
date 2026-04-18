@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Técnico - Mi Manual HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="progreso-contenedor">
+        <div class="progreso-barra" id="barraProgreso"></div>
+    </div>
+
+    <header id="cabecera-principal">
+        <h1>📖 Glosario de Términos</h1>
+        <p>Tu referencia rápida para los conceptos clave del desarrollo web.</p>
+    </header>
+
+   <nav class="menu-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="estructura.html">Estructura</a>
+        <a href="css-basico.html">CSS Básico</a>
+        <a href="formularios.html"  >Formularios</a>
+        <a href="glosario.html"  >Glosario</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="contenido-pagina">
+            <div class="buscador-glosario">
+                <input type="text" id="inputBusqueda" placeholder="Buscar término..." onkeyup="filtrarGlosario()">
+            </div>
+
+            <dl class="lista-glosario" id="glosario">
+                <div class="termino-item">
+                    <dt>Atributo</dt>
+                    <dd>Información adicional que se añade a una etiqueta para modificar su comportamiento (ej. <code>href</code> o <code>src</code>).</dd>
+                </div>
+
+                <div class="termino-item">
+                    <dt>Box Model</dt>
+                    <dd>Concepto de CSS que describe cómo cada elemento se rodea de padding, bordes y márgenes.</dd>
+                </div>
+
+                <div class="termino-item">
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets. Lenguaje utilizado para definir la presentación y el diseño de un documento HTML.</dd>
+                </div>
+
+                <div class="termino-item">
+                    <dt>DOM</dt>
+                    <dd>Document Object Model. La estructura lógica de una página web que el navegador utiliza para renderizarla.</dd>
+                </div>
+
+                <div class="termino-item">
+                    <dt>HTML5</dt>
+                    <dd>La versión más reciente del lenguaje de marcado estándar para la web, que incluye etiquetas semánticas y multimedia.</dd>
+                </div>
+
+                <div class="termino-item">
+                    <dt>Responsive Design</dt>
+                    <dd>Técnica de diseño que permite que una web se adapte automáticamente a diferentes tamaños de pantalla.</dd>
+                </div>
+            </dl>
+        </section>
+        
+        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="css-basico.html" class="boton-accion">← Anterior</a>
+            <a href="contacto.html" class="boton-accion">Siguiente: Contacto →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - MANUAL HTML</p>
+    </footer>
+
+</body>
+</html>

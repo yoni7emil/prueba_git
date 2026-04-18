@@ -1,0 +1,32 @@
+/* Definición de colores base (Modo Claro) */
+:root {
+    --color-fondo: #f0f4f8;
+    --color-tarjeta: #ffffff;
+    --color-texto-principal: #102a43;
+    --color-texto-secundario: #486581;
+    --color-borde: #d9e2ec;
+    --color-acento: #48bb78; /* Verde UTN */
+}
+
+/* Colores para el Modo Oscuro */
+[data-theme="dark"] {
+    --color-fondo: #0f172a;
+    --color-tarjeta: #1e293b;
+    --color-texto-principal: #f1f5f9;
+    --color-texto-secundario: #94a3b8;
+    --color-borde: #334155;
+    --color-acento: #4ade80;
+}
+
+/* Aplicar las variables al body y elementos */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.tarjeta-proyecto, .contenido-pagina, .lista-enlaces a {
+    background-color: var(--color-tarjeta);
+    border-color: var(--color-borde);
+    color: var(--color-texto-principal);
+}

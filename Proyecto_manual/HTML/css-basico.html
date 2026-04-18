@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Básico - Mi Manual HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="progreso-contenedor">
+        <div class="progreso-barra" id="barraProgreso"></div>
+    </div>
+
+    <header id="cabecera-principal">
+        <h1>Capítulo 3: Estilos con CSS</h1>
+        <p>Aprendiendo a dar color, forma y vida a la estructura web.</p>
+    </header>
+  
+    <nav class="menu-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="estructura.html">Estructura</a>
+        <a href="css-basico.html">CSS Básico</a>
+        <a href="formularios.html"  >Formularios</a>
+        <a href="glosario.html"  >Glosario</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <section class="contenido-pagina">
+            <h2>¿Qué es el Modelo de Caja?</h2>
+            <p>En CSS, cada elemento se considera una caja rectangular. Comprender sus partes es clave para el diseño:</p>
+
+            <div class="demo-box-model">
+                <div class="box-margin">Margin
+                    <div class="box-border">Border
+                        <div class="box-padding">Padding
+                            <div class="box-content">Contenido</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="lista-cebra">
+                <li><strong>Content:</strong> El texto o imagen real.</li>
+                <li><strong>Padding:</strong> Espacio interno entre el contenido y el borde.</li>
+                <li><strong>Border:</strong> La línea que rodea al padding y contenido.</li>
+                <li><strong>Margin:</strong> Espacio externo que separa un elemento de otros.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Selectores Básicos</h2>
+            <p>Para aplicar estilos, necesitamos "apuntar" a los elementos:</p>
+            <table class="tabla-manual">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Ejemplo</th>
+                        <th>Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Etiqueta</td>
+                        <td><code>p { ... }</code></td>
+                        <td>Afecta a todos los párrafos.</td>
+                    </tr>
+                    <tr>
+                        <td>Clase</td>
+                        <td><code>.mi-boton { ... }</code></td>
+                        <td>Se usa con el atributo <code>class</code>.</td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td><code>#unico { ... }</code></td>
+                        <td>Para un solo elemento específico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="estructura.html" class="boton-accion">← Anterior</a>
+            <a href="formularios.html" class="boton-accion">Siguiente →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - MANUAL HTML</p>
+    </footer>
+
+</body>
+</html>

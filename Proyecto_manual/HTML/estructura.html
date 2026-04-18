@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Básica - Mi Manual HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <header id="cabecera-principal">
+        <h1>Capítulo 2: El Esqueleto Web</h1>
+        <p>Entendiendo la jerarquía básica de un documento HTML5.</p>
+    </header>
+  
+    <nav class="menu-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="estructura.html">Estructura</a>
+        <a href="css-basico.html">CSS Básico</a>
+        <a href="formularios.html"  >Formularios</a>
+        <a href="glosario.html"  >Glosario</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="contenido-pagina">
+            <h2>Las Tres Capas Fundamentales</h2>
+            <p>Todo archivo HTML se divide en secciones que separan la configuración del contenido visible.</p>
+
+            <div class="explicacion-bloque">
+                <h3>1. &lt;head&gt; (El Cerebro)</h3>
+                <p>Contiene información que no se ve directamente en la página, como el título de la pestaña, los vínculos a CSS y las etiquetas <strong>meta</strong>.</p>
+            </div>
+
+            <div class="explicacion-bloque">
+                <h3>2. &lt;body&gt; (El Cuerpo)</h3>
+                <p>Aquí va todo lo que el usuario final puede ver: textos, imágenes, videos y menús. Es el contenedor de la interfaz.</p>
+            </div>
+
+            <div class="explicacion-bloque">
+                <h3>3. &lt;meta&gt; (La Identidad)</h3>
+                <p>Etiquetas esenciales para el navegador:</p>
+                <ul class="lista-cebra">
+                    <li><code>charset="UTF-8"</code>: Permite mostrar tildes y eñes correctamente.</li>
+                    <li><code>name="viewport"</code>: Hace que tu web se vea bien en celulares (Responsivo).</li>
+                    <li><code>name="description"</code>: El resumen que aparece en los resultados de Google.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="introduccion.html" class="boton-accion">← Anterior</a>
+            <a href="css-basico.html" class="boton-accion">Siguiente</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - MANUAL HTML</p>
+    </footer>
+</body>
+</html>

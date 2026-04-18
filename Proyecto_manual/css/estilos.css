@@ -1,0 +1,105 @@
+/* main */
+
+@import "inicio.css";
+@import "etiquetas.css";
+@import "lectura.css";
+@import "contactos.css";
+@import "formulario.css";
+@import "grid.css";
+@import "indice.css";
+@import "modo_noche.css";
+@import "estructuras.css";
+@import "css.css";
+@import "botones.css";
+@import "modo_noche";
+@import "glosario.css";
+@import "fondo.css";
+@import "";
+@import "";
+
+
+
+
+/* --- Tipografía y Fondo --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambio de fuente */
+    background-color: #f0f4f8; /* Color de fondo armonioso */
+    color: #334e68; /* Color de texto principal (p) */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- Selectores de Etiqueta --- */
+h1 {
+    color: #102a43;
+    text-align: center;
+}
+
+h2 {
+    color: #243b53;
+    border-bottom: 2px solid #bcccdc;
+    display: inline-block;
+}
+
+/* --- Selector de ID (Elemento único) --- */
+#cabecera-principal {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* --- Selector de Clase --- */
+.boton-accion {
+    background-color: #48bb78;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza la interacción */
+}
+
+/* --- Interactividad (Pseudo-clases) --- */
+.boton-accion:hover {
+    background-color: #38a169; /* Cambia color al pasar el mouse */
+    transform: scale(1.05); /* Cambia tamaño ligeramente */
+}
+
+.campo-texto:focus {
+    outline: none;
+    border: 2px solid #627d98; /* Resalta donde el usuario escribe */
+    background-color: #ffffff;
+}
+
+.enlace-simple:hover {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+/* --- Pintando Listas (nth-child estilo cebra) --- */
+.lista-cebra li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.lista-cebra li:nth-child(odd) {
+    background-color: #d9e2ec; /* Filas impares */
+}
+
+.lista-cebra li:nth-child(even) {
+    background-color: #f0f4f8; /* Filas pares */
+}
+
+/* --- Detalles Visuales (Pseudo-elementos) --- */
+.campo-texto::placeholder {
+    color: #9fb3c8;
+    font-style: italic;
+}
+
+h2::before {
+    content: "📘 "; /* Agrega un icono antes de los h2 */
+}

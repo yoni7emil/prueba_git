@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Pro - Mi Manual HTML</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <header id="cabecera-principal">
+        <h1>Capítulo 2: Etiquetas Esenciales</h1>
+        <p>Dominando el marcado semántico y de contenido.</p>
+    </header>
+
+    <nav class="menu-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="introduccion.html">Introducción</a>
+        <a href="estructura.html">Estructura</a>
+        <a href="css-basico.html">CSS Básico</a>
+        <a href="formularios.html"  >Formularios</a>
+        <a href="glosario.html"  >Glosario</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <section class="contenido-pagina">
+            <h2>Etiquetas de Estructura (Semántica)</h2>
+            <p>La semántica ayuda a los buscadores (como Google) a entender de qué trata tu web.</p>
+            
+            <ul class="lista-cebra">
+                <li><code>&lt;header&gt;</code>: Define la cabecera de una sección o página.</li>
+                <li><code>&lt;nav&gt;</code>: Contiene los enlaces de navegación.</li>
+                <li><code>&lt;main&gt;</code>: Define el contenido principal y único del documento.</li>
+                <li><code>&lt;footer&gt;</code>: El pie de página con información de autor o legal.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Etiquetas de Contenido</h2>
+            <p>Estas son las que más usarás en el día a día:</p>
+
+            <table class="tabla-manual">
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Función</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></td>
+                        <td>Títulos y subtítulos.</td>
+                        <td><h1>Título</h1></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Párrafos de texto.</td>
+                        <td>Es un párrafo.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Insertar imágenes.</td>
+                        <td>src="imagen.jpg"</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Hipervínculos.</td>
+                        <td>href="url"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+       
+        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="css-basico.html" class="boton-accion">← Anterior</a>
+            <a href="contacto.html" class="boton-accion">Siguiente: Contacto →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - MANUAL HTML</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* Efecto de respuesta inmediata en botones */
+.boton-accion:active {
+    transform: scale(0.95); /* El botón se hunde un poco al hacer clic */
+}
+
+/* Estilo para campos obligatorios que faltan llenar */
+.campo-texto:invalid:focus {
+    border-color: #e53e3e; /* Rojo si el dato es incorrecto (ej: email sin @) */
+}
+
+/* Estilo para cuando el dato es correcto */
+.campo-texto:valid:focus {
+    border-color: #48bb78; /* Verde si el dato cumple el formato */
+}
